@@ -1,43 +1,78 @@
-Project Two
+# Group 1 - Project 2
+
+**Group Member:** 
+
+- Alex Amon
+
+- Clarie Stokes
+
+- Sam Kohnle
+
+- Sylvia Fan
 
 
+## Project Topic: Stock Price Prediction Using Different Machine Learning Models
 
+In this project, we will build and train 5 different models: LSTM, GRU, KNN, SVR and RFR, using a 10 day window of closing prices to predict the 11th day closing price. We will compare the models and analyze the models' performance at predicting stock closing price. 
 
+### Libraries:
 
+**Import libraries and packages: ** 
 
+- numpy 
+- os
+- math
+- pathlib  
+- alpaca_trade_api
+- hvplot
+- sklearn
+- tensorflow 
+- plotly
 
+### Jupyter Notebook Table Content
 
-# Technical Notes
-Goal of the Project - Accurately predict stock prices using Machine Learning Models
+\- Import libraries and packages
 
-Process
-1. Track and predict future price movements of Tesla stock (TSLA). As well as competitors Ford (F), Lucid Group (LCID), General Motors (GM), and Toyota (TM)
-2. Create machine learning code to help predict price. (Main Model will be LSTM)
-3. Stretch goals - include creating an NLP program that will help us see how potential news articles can afffect stock price movements
-4. Stretch goals - include using GRU, KNN, SVR,and RFR to predict stock price
-5. Stretch goals - Creating Neural Networks and using Sentiment Analysis
-6. Finalizing the project involves a summation of results of project, and answering the question of if it is possible to predict future stock price movements accurately
+-Data Loading Method: Using Aplpaca to pull the stock data
 
-## Libraries
-This Jupyter Lab notebook utilizes the following libraries:
+\- Preprocessing data
 
- --   path
+​      \- Checking Null/NA value and remove it
 
- --   collections
+​     \- Converting Date column from string to datetime format
 
- --   sklearn
- 
- --   imblearn
+  \- Plotting stock close price chart
 
- --   pandas
+  \- Normalizing/scaling close values between 0 to 1
 
- --   Numpy
+  \- Split data for training and testing keeping date and historical price data in order
 
- --   Pathlib
+\- **Algorithms** 
 
- --   matplotlib
+  \- K-nearest neighbour - KNN
 
+  \- Super vector regressor - SVR
 
-# Acknowledgements
+ \-  Long Short Term Memory -  LSTM 
+
+ \- Gated Recurrent Units - GRU
+
+ \-  Random Forest Regressor - RF
+
+\- **Plotting Predicted Close Price of All 5 Models VS Original Close Price **
+
+-**Model Output Metrics Comparison**
+
+​    \- RMSE, MSE and MAE
+
+​    \- Explained variance regression score
+
+​    \- R<sup>2</sup> score for regression
+
+## Project Summary and Findings Presentation:
+
+https://docs.google.com/presentation/d/1Qw0rOhCKXzTHjujHn8pkIDyOwvBNbp-vYXNM_48FbLM/edit#slide=id.p
+
+## Acknowledgements
 
 We would like to first acknowledge the guidance and teaching of our FinTech Boot Camp Instructor, Garth Mortensen, our TA, Roberto Salazar.
